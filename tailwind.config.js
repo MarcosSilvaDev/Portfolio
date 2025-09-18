@@ -1,9 +1,13 @@
-export default {
+module.exports = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}', // seu diretório de componentes
+  ],
   theme: {
     extend: {
       fontFamily: {
-        cossette: ['Cossette Titre', 'sans-serif'],
+        reckoner: ['Reckoner', 'sans-serif'], // registra a fonte
       },
     },
   },
+  plugins: [],
 };

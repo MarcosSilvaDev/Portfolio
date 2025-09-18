@@ -7,17 +7,7 @@ type ContainerProps = {
 
 export function Container({ children, className }: ContainerProps) {
   return (
-    <div
-      className={clsx(
-        'min-h-screen',
-        'min-w-screen',
-        'flex',
-        'flex-col',
-        'justify-center',
-        'itens-center',
-        className,
-      )}
-    >
+    <div className={clsx('flex-1', 'w-full', 'flex', 'flex-col', className)}>
       {children}
     </div>
   );

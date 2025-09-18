@@ -1,7 +1,22 @@
+import clsx from 'clsx';
+
 export function Footer() {
   return (
-    <footer className='flex justify-center items-center p-4'>
-      <h3 className='text-amber-50 mt-auto'>Desenvolvido por Marcos silva</h3>
-    </footer>
+    <div
+      className={clsx(
+        'h-12',
+        'bg-[#12082c]',
+        'border-t-1',
+        'border-gray-600',
+        'text-white',
+        'flex',
+        'items-center',
+        'justify-center',
+      )}
+    >
+      <span className={clsx('text-gray-400 text-sm')}>
+        © 2025 Marcos Silva. Todos os direitos reservados.
+      </span>
+    </div>
   );
 }

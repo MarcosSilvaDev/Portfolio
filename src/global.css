@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
-
-:root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Reckoner';
+  src: url('/assets/fonts/ReckonerBold.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }

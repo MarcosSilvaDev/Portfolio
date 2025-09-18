@@ -1,26 +1,23 @@
 import clsx from 'clsx';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 type RouterLinkProps = {
   children: React.ReactNode;
   href: string;
 } & React.ComponentProps<'a'>;
 
-export function RouterLink({ children, href, ...props }: RouterLinkProps) {
+export function RouterLink({ children, href }: RouterLinkProps) {
   return (
     <Link
-      to={href}
-      {...props}
       className={clsx(
-        'text-[#fafafa]',
-        'font-bold',
-        'text-xl',
-        'hover:scale-105',
-        'transition-transform',
-        'duration-100',
-        'ease-out',
-        'hover:drop-shadow-[0_0_10px_#eeedeb]',
+        'uppercase',
+        'transition-colors',
+        'duration-400',
+        'ease-in-out',
+        'hover:text-[#4379db]',
+        'hover:drop-shadow-[0_0_2px_rgba(67,121,219,0.7)]',
       )}
+      to={href}
     >
       {children}
     </Link>
