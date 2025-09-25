@@ -8,7 +8,6 @@ export function Home() {
         className={clsx(
           'flex',
           'flex-col',
-
           'items-center-safe',
           'sm:items-start',
           'sm:justify-center',
@@ -26,9 +25,9 @@ export function Home() {
             'text-3xl sm:text-4xl md:text-5xl',
             'font-extrabold',
             'bg-gradient-to-r',
-            'from-blue-600',
-            'via-blue-400',
-            'to-emerald-400',
+            'from-blue-700',
+            'via-blue-300',
+            'to-emerald-500',
             'bg-clip-text',
             'text-transparent',
           )}

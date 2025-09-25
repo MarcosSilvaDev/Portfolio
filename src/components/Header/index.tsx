@@ -33,7 +33,7 @@ export function Header() {
           <RouterLink href='/'>Home</RouterLink>
         </li>
         <li>
-          <RouterLink href='/'>Tecnologias</RouterLink>
+          <RouterLink href='/techologies'>Tecnologias</RouterLink>
         </li>
         <li>
           <RouterLink href='/'>Projetos</RouterLink>
@@ -103,7 +103,7 @@ export function Header() {
           )}
         >
           <RouterLink
-            href='/'
+            href='/techologies'
             className={clsx('block w-full text-center py-4')}
           >
             Tecnologias
