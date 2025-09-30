@@ -36,10 +36,10 @@ export function Header() {
           <RouterLink href='/techologies'>Tecnologias</RouterLink>
         </li>
         <li>
-          <RouterLink href='/'>Projetos</RouterLink>
+          <RouterLink href='/projects'>Projetos</RouterLink>
         </li>
         <li>
-          <RouterLink href='/'>Contato</RouterLink>
+          <RouterLink href='/contact'>Contato</RouterLink>
         </li>
       </ul>
 
@@ -120,7 +120,7 @@ export function Header() {
           )}
         >
           <RouterLink
-            href='/'
+            href='/projects'
             className={clsx('block w-full text-center py-4')}
           >
             Projetos
@@ -131,7 +131,7 @@ export function Header() {
           className={clsx('w-full', 'flex', 'justify-center', 'items-center')}
         >
           <RouterLink
-            href='/'
+            href='/contact'
             className={clsx('block w-full text-center py-4')}
           >
             Contato

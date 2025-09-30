@@ -114,6 +114,7 @@ export function Home() {
             alt='Background'
             className={clsx(
               'absolute',
+              'rounded-4xl',
               'inset-0',
               'w-full',
               'h-full',
