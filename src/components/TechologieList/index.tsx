@@ -26,7 +26,7 @@ export function TechologieList() {
       {iconsList.map((item, index) => (
         <div key={index} className='flex items-center justify-center'>
           {item === gitHubIcon ? (
-            <div className='bg-white p-1 rounded-2xl flex items-center justify-center'>
+            <div className='bg-white p-[3px] rounded-full flex items-center justify-center'>
               <img
                 src={item}
                 alt='GitHub'

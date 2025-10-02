@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import { Container } from '../../components/Container';
 
+import meuPdf from '../../assets/pdf/Desenvolvedor_Fronend_Jr_MARCOS_SILVA.pdf';
+
 export function Home() {
   return (
     <Container className='flex-1 flex-col-reverse justify-evenly sm:flex-row p-6 gap-4'>
@@ -53,7 +55,9 @@ export function Home() {
           layout responsivos, modernos e eficientes.
         </p>
 
-        <button
+        <a
+          href={meuPdf}
+          download='Desenvolvedor_Fronend_Jr_MARCOS_SILVA.pdf'
           className={clsx(
             'p-[2px]',
             'mt-2',
@@ -91,7 +95,7 @@ export function Home() {
           >
             Baixar Currículo
           </span>
-        </button>
+        </a>
       </div>
 
       <div className='flex justify-center-safe items-center-safe'>
