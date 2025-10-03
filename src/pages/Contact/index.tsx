@@ -22,7 +22,8 @@ export function Contact() {
         'Pc_d2Cr5kfTK8yJu3',
       )
       .then(
-        result => {
+        //disable-eslint-next-line
+        () => {
           alert('E-mail enviado');
           form.current?.reset();
         },
