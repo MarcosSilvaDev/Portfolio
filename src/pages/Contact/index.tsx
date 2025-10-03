@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Container } from '../../components/Container';
 
 import linkedinIcon from '../../assets/images/Icons/linkedin.svg';
@@ -6,6 +8,30 @@ import gitIcon from '../../assets/images/Icons/github-icon.svg';
 import whatsappIcon from '../../assets/images/Icons/whatsapp-icon.svg';
 
 export function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.current) return;
+
+    emailjs
+      .sendForm(
+        'service_k96hvnp',
+        'template_lykdnp7',
+        form.current,
+        'Pc_d2Cr5kfTK8yJu3',
+      )
+      .then(
+        result => {
+          alert('E-mail enviado');
+          form.current?.reset();
+        },
+        error => {
+          alert('Erro ao enviar a mensagem: ' + error.text);
+        },
+      );
+  };
+
   return (
     <Container className='flex flex-1 p-6 justify-center gap-2 flex-col sm:flex-row'>
       <div className='sm:w-1/2 text-white flex justify-start p-10'>
@@ -101,7 +127,11 @@ export function Contact() {
         </div>
       </div>
 
-      <form className='sm:w-1/2  flex gap-5 flex-col justify-center-safe p-5'>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className='sm:w-1/2  flex gap-5 flex-col justify-center-safe p-5'
+      >
         <h1 className={clsx('text-lg text-white uppercase')}>
           Me mande uma mensagem
         </h1>
@@ -110,7 +140,9 @@ export function Contact() {
             Nome
           </label>
           <input
+            required
             type='text'
+            name='from_name'
             placeholder='Digite seu nome aqui...'
             className={clsx(
               'w-full',
@@ -133,7 +165,9 @@ export function Contact() {
             E-mail
           </label>
           <input
+            required
             type='email'
+            name='from_email'
             placeholder='Digite seu e-mail aqui...'
             className={clsx(
               'w-full',
@@ -156,7 +190,9 @@ export function Contact() {
             Mensagem
           </label>
           <textarea
+            required
             rows={2}
+            name='message'
             placeholder='Digite sua mensagem aqui...'
             className={clsx(
               'w-full',
@@ -174,6 +210,7 @@ export function Contact() {
           ></textarea>
         </div>
         <button
+          type='submit'
           className={clsx(
             'p-[2px]',
             'mt-2',
