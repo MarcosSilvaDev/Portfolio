@@ -63,10 +63,13 @@ export function Projects() {
             <p className='text-gray-300 text-center'>
               React JS - Vite - Typescript{' '}
             </p>
-            <button
+            <a
+              href='https://chronos-pomodoro-96fu.vercel.app/'
+              target='_blank'
               className={clsx(
                 'border-2',
                 'border-blue-700',
+                'text-center',
                 'w-50',
                 'rounded',
                 'p-2',
@@ -80,7 +83,7 @@ export function Projects() {
               )}
             >
               <span className={clsx('text-white uppercase')}>acessar</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -121,12 +124,12 @@ export function Projects() {
             <p className='text-gray-300 text-center'>
               React JS - Vite - Typescript{' '}
             </p>
-            <button
-              disabled
+            <a
               className={clsx(
-                'disabled:bg-gray-500',
+                'bg-gray-500',
                 'w-50',
                 'rounded',
+                'text-center',
                 'p-2',
                 'transition-all',
                 'duration-300',
@@ -134,7 +137,7 @@ export function Projects() {
               )}
             >
               <span className={clsx('text-white uppercase')}>acessar</span>
-            </button>
+            </a>
           </div>
         </div>
 
