@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont.woff2") format("woff2");
+  font-weight: 200 900;
+}
+
+@font-face {
+  font-family: "Armarna";
+  src: url("Amarna-Italic-VariableFont_wght.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
