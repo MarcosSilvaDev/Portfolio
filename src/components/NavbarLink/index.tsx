@@ -17,7 +17,6 @@ export function NavbarLink({ url, children }: NavbarLinkProps) {
           : clsx(
               "text-slate-300",
               "hover:text-[#05ffff]",
-              "hover:scale-102",
               "hover:[text-shadow:0_0_5px_#39f6f4]",
               "transition",
               "duration-200",
