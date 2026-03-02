@@ -5,12 +5,14 @@ import { NavLink } from "react-router-dom";
 type NavbarLinkProps = {
   url: string;
   children: React.ReactNode;
+  onClick?: () => void;
 };
 
-export function NavbarLink({ url, children }: NavbarLinkProps) {
+export function NavbarLink({ url, children, onClick }: NavbarLinkProps) {
   return (
     <NavLink
       to={url}
+      onClick={onClick}
       className={({ isActive }) =>
         isActive
           ? "text-[#05ffff]"

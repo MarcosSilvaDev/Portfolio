@@ -15,10 +15,6 @@
   --font-sans: "Montserrat", system-ui, sans-serif;
 }
 
-h1 {
-  font-weight: 500;
-}
-
 @keyframes slide-to-center {
   0% {
     transform: translateX(15px);
@@ -47,4 +43,60 @@ h1 {
 
 .slide-from-left {
   animation: slide-from-left 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+:root {
+  --angle: 45deg;
+  --opacity: 0.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.rainbow {
+  --border-size: 0.3rem;
+  border: var(--border-size) solid transparent;
+
+  /* Paint an image in the border */
+  border-image: conic-gradient(
+      from var(--angle),
+      #00ffff 0deg 120deg,
+      #2dc1d4 120deg 240deg,
+      #05a5a5 240deg 360deg
+    )
+    1 stretch;
+  background: rgb(255 255 255 / var(--opacity));
+}
+
+@property --opacity {
+  syntax: "<number>";
+  initial-value: 0.5;
+  inherits: false;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes opacityChange {
+  to {
+    --opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.rainbow {
+  animation:
+    rotate 7s linear infinite,
+    opacityChange 3s infinite alternate;
 }

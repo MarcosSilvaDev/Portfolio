@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { FileDown } from "lucide-react";
-import myImage from "../../assets/my_image.webp";
+import myImage from "../../assets/Home_img.webp";
 
 export function Home() {
   return (
@@ -9,8 +9,6 @@ export function Home() {
         "relative",
         "min-h-full",
         "w-full",
-        "bg-[url(/Background.webp)]",
-        "bg-cover",
         "flex",
         "items-center",
         "justify-center",
@@ -23,8 +21,6 @@ export function Home() {
         "gap-8 sm:gap-0",
       )}
     >
-      <div className="absolute inset-0 bg-[#292928]/80 " />
-
       <div className="z-20 text-slate-50 flex flex-col pb-5 gap-2 sm:gap-10 slide-from-left">
         <div className="flex flex-col px-8">
           <h3 className="text-md sm:text-2xl">Olá! eu sou</h3>
@@ -65,6 +61,7 @@ export function Home() {
         <img
           className="w-65 h-89 sm:w-95 sm:h-137 lg:w-120 lg:h-167 xl:w-120 slide-center"
           src={myImage}
+          aria-label="Imagem do profissional"
         />
 
         <div className="absolute sm:hidden flex flex-col gap-1 items-end mb-5 sm:shadow-[0_0_10px_#24ebeb] shadow-none">
