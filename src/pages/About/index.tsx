@@ -2,7 +2,7 @@ import aboutImage from "../../assets/About_img.webp";
 
 export function About() {
   return (
-    <div className="flex z-3 sm:min-h-full w-full flex-col sm:flex-row justify-center items-center gap-10 p-2">
+    <div className="relative flex z-20 sm:min-h-full w-full flex-col sm:flex-row justify-center items-center gap-10 p-2">
       <div className=" bg-green-400">
         <img
           className="w-90 h-100 sm:w-110 sm:h-140 rainbow shadow-[0_0_10px_#24ebeb]"

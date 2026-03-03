@@ -45,6 +45,22 @@
   animation: slide-from-left 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
+@keyframes slide-from-bottom {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-from-bottom {
+  animation: slide-from-bottom 0.9s ease-out forwards;
+}
+
+/* border animation */
 :root {
   --angle: 45deg;
   --opacity: 0.5;
