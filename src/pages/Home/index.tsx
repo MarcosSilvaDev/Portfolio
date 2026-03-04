@@ -17,7 +17,7 @@ export function Home() {
         "bg-no-repeat",
         "flex-col-reverse",
         "sm:flex-row",
-        "z-10",
+        "z-25",
         "gap-8 sm:gap-0",
       )}
     >

@@ -6,7 +6,7 @@ export function Skills() {
     <div
       className={clsx(
         "relative",
-        "z-25",
+        "z-0",
         "flex",
         "flex-col",
         "sm:flex-row",
@@ -22,11 +22,11 @@ export function Skills() {
       )}
     >
       <div className="w-sm sm:w-1/3 ">
-        <h1 className="pb-4 text-6xl uppercase font-[Armarna] text-[#08e7e7] text-shadow-[0_0_4px_#39f6f4]">
+        <h1 className="pb-8 text-5xl uppercase font-[Armarna] text-[#08e7e7] text-shadow-[0_0_4px_#39f6f4]">
           Habilidades
         </h1>
 
-        <div className="bg-[#2c2c2c]/85 rounded-lg shadow-[0_0_7px_#666666] p-2 slide-from-bottom">
+        <div className="bg-[#2c2c2c]/90 rounded-lg shadow-[0_0_7px_#666666] p-2 slide-from-bottom">
           <ul
             className={clsx(
               "border-2",

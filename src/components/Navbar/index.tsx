@@ -10,7 +10,7 @@ export function Navbar() {
   }
 
   return (
-    <nav className="flex p-3 z-30 text-xl justify-center relative">
+    <nav className="sticky top-0 z-50 flex p-3  text-xl justify-center">
       <div className="hidden w-full md:flex justify-evenly gap-8 text-lg">
         <NavbarLink url="/">Home</NavbarLink>
         <NavbarLink url="/about">Sobre</NavbarLink>
@@ -28,27 +28,28 @@ export function Navbar() {
 
       <div
         className={`
-          fixed inset-0 z-20 md:hidden
-          flex items-start justify-center
-          transition-all duration-300 ease-in-out
-         ${isOpen ? "opacity-100 backdrop-blur-sm" : "opacity-0 backdrop-blur-0"}
-        `}
+    fixed inset-0 z-20 md:hidden
+    flex items-start justify-center
+    transition-all duration-300 ease-in-out
+    ${isOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}
+  `}
       >
         <div
-          className="absolute inset-0 backdrop-blur-sm "
+          className="absolute inset-0 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         />
 
         <div
           className={`
-            relative mt-16
-            bg-[#292928]
-            w-full
-            flex flex-col items-center gap-10 py-6 rounded-xl
-            transform transition-all duration-300 ease-in-out
-            ${isOpen ? "translate-y-0 scale-100" : "-translate-y-10 scale-95"}
-          `}
+      relative mt-16
+      bg-[#292928]
+      w-full
+      flex flex-col items-center gap-10 py-6 rounded-xl
+      transform transition-all duration-300 ease-in-out
+      ${isOpen ? "translate-y-0 scale-100" : "-translate-y-10 scale-95"}
+    `}
         >
+          {" "}
           <NavbarLink url="/" onClick={() => handleClose()}>
             Home
           </NavbarLink>
