@@ -1,75 +1,54 @@
-# React + TypeScript + Vite
+Este é meu portfólio profissional de desenvolvimento Front-End, criado para apresentar meus projetos, habilidades e tecnologias que utilizo no desenvolvimento de interfaces modernas para web.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O site foi desenvolvido com foco em responsividade e boas práticas de desenvolvimento, proporcionando uma navegação simples em desktop e mobile.
 
-Currently, two official plugins are available:
+🚀 Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Acesse o site online:  
+link: https://portfolio-v1-vert-psi.vercel.app/
+<br/><br/>
+🧱 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## React Compiler
+⚛️ React
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+⚡ Vite
 
-Note: This will impact Vite dev & build performances.
+🎨 Tailwind CSS
 
-## Expanding the ESLint configuration
+🧠 TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🧩 Lucide Icons
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🌐 HTML5
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🎯 CSS3
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📦 JavaScript (ES6+)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<br/><br/>
+📂 Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+O portfólio contém as seguintes seções:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Home – Apresentação inicial
+
+Sobre – Informações sobre minha trajetória
+
+Habilidades – Tecnologias e ferramentas que utilizo
+
+Projetos – Alguns projetos desenvolvidos
+
+<br/>
+Além disso, o site conta com:<br/>
+<br/>
+Layout totalmente responsivo<br/>
+<br/>
+Animações suaves<br/>
+<br/>
+Código organizado e escalável<br/>
+
+<br/><br/>
+
+📄 Licença
+
+Este projeto foi desenvolvido para fins de portfólio e aprendizado.
