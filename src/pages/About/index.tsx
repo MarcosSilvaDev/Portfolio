@@ -56,7 +56,7 @@ export function About() {
           Sobre mim
         </h1>
 
-        <h2 className="text-slate-400 ">Desenvolvedor Front-end Júnior</h2>
+        <h2 className="text-slate-400 ">Desenvolvedor Frontend Júnior</h2>
 
         <p>
           Desenvolvedor Front-End Júnior com sólida base em HTML, CSS,

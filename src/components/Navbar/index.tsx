@@ -16,7 +16,6 @@ export function Navbar() {
         <NavbarLink url="/about">Sobre</NavbarLink>
         <NavbarLink url="/skills">Habilidades</NavbarLink>
         <NavbarLink url="/projects">Projetos</NavbarLink>
-        <NavbarLink url="/contact">Contato</NavbarLink>
       </div>
 
       <button
@@ -61,9 +60,6 @@ export function Navbar() {
           </NavbarLink>
           <NavbarLink url="/projects" onClick={() => handleClose()}>
             Projetos
-          </NavbarLink>
-          <NavbarLink url="/contact" onClick={() => handleClose()}>
-            Contato
           </NavbarLink>
         </div>
       </div>
